@@ -1,0 +1,50 @@
+{% load static %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ CART</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+    {% block header %}
+    <!-- header -->
+     {% endblock header %}
+
+    {% block banner %}
+    <!-- bannner -->
+    {% endblock banner %}
+    <!-- Featured Products -->
+
+    {% block content %}
+    <!-- home_page_layout -->
+    {% endblock content %}
+
+    <!-- Footer -->
+    {% block footer %}
+    <!-- footer -->
+    {% endblock footer %}
+
+    <!-- javascript -->
+     {% block scripts %}
+     <!-- script -->
+      {% endblock scripts %}
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (M22ms.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
